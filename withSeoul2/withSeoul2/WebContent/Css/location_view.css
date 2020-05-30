@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* 폰트 적용 */
+@font-face{
+	font-family: '나눔스퀘어 eb';
+	font-style: normal;
+	src:url(../font/NanumSquareEB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareEB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareEB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareEB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 b';
+	font-style: bold;
+	src:url(../font/NanumSquareRoundB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 r';
+	font-style: normal;
+	src:url(../font/NanumSquareRoundR.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundR.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundR.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundR.woff) format('woff');
+}
+#main_logo{
+	position: absolute;
+	left: 450px;
+}
+li{
+	width: 210px;
+}
+body{
+	height: 1000px; width: 1550px;
+	padding-left: 40px;
+	overflow: auto;
+}
+#top{
+	width: 1470px;
+	height: 250px;
+}
+/* new */
+h2{
+	position: absolute;
+	left: 340px; top: 305px;
+	font-family: "나눔스퀘어 eb"; font-size: 25px;
+}
+th{
+	background-color: #f7f7f7;
+	border-bottom: 2px solid black; border-right: 2px solid black;
+}
+#notice_write{
+	position: absolute;
+	left: 340px; top: 365px;
+	width: 800px; height: 600px;
+}
+#footer{ width: 200px; height: 50px; }
+#notice_tbl{ font-family: "나눔스퀘어라운드 r";}
+#notice_tbl td{ 
+	background-color: rgba(247,247,247,0.05);
+	border-right: 0.3px solid black; border-bottom: 0.3px solid black;}
+#tbl_th1{width:100px; height: 100px;}
+#tbl_th2{width:200px; height: 100px;}
+#tbl_th3{width:400px; height: 100px;}
+#tbl_td1{height:50px; text-align:center;}
+#tbl_td2{height:50px; text-align:center;}
+#tbl_td3{height:50px; padding-left: 10px;}
+#footer{
+	position: absolute;
+	left: 610px; top: 990px;
+	font-family: "나눔스퀘어라운드 r";
+}
+#footer td{width: 30px;}
+#sidebar{
+	position: absolute;
+	left: 1180px; top: 315px;
+	width: 300px; height: 600px;
+}
+#location_tbl{
+	width:200px;
+	position:absolute; left: 5px; top: 80px;
+	font-family: "나눔스퀘어라운드 r"; font-size: 16px;
+}
+#location_tbl td{
+	text-align:center;
+	height: 40px; width: 100px;
+	background-color: rgba(175,194,126,0.3);
+}
+#location_tbl td a{
+	text-decoration:none;
+	color: black;
+}
+/* 탭바 시작 */
+#div_li{
+	margin-left: 35px;
+	width: 90px; height: 100%;
+}
+.tabbar{
+	position: absolute; top: 230px;
+	width: 1470px;
+	border: none;
+	margin: 0px; padding: 0px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	background-color: #e8e8ba;
+}
+.tabbar ul{
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.tabbar li{
+	float: left;
+	padding: 0px;
+}
+.tabbar li a{
+	color: black;
+	display: block;
+	line-height: 50px;
+	margin: 0px;
+	padding: 0px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.tabbar li a:hover, .tabbar ul li:hover a{
+	font-weight:bold;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.tabbar li ul{
+	background-color: aliceblue;
+	display: none;
+	height: auto;
+	padding: 0px; margin: 0px;
+	border: 0px;
+	position: absolute;
+	width: auto;
+	z-index: 200;
+}
+.tabbar li:hover ul{
+	display: block;
+}
+.tabbar li li{
+	float: none;
+	width: 210px;
+	margin: 0px; padding: 0px;
+	display: block;
+}
+.tabbar li:hover li a{
+	background-color: none;
+}
+.tabbar li ul a{
+	display: block;
+	height: 50px;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 10px 0px 15px;
+	text-align: left;
+}
+.tabbar li ul a:hover, .tabber li ul li:hover a{
+	background-color: #9e9b6d;
+	border: 0px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+/* 왼쪽 네비게이션 바 */
+.leftbar{
+	width: 170px; height: 550px;
+	position: absolute;
+	left: 90px; top: 315px;
+	border: none;
+}
+.leftbar ul{
+	width: 200px; height: 70px;
+	list-style: none;
+	margin: 0px; padding: 0px;
+}
+.leftbar li{
+	float: top;
+	overflow: hidden;
+	display: block;
+	line-height: 70px;
+	text-align: center;
+	font-size: 20px; font-family: "나눔스퀘어라운드 r";
+	background-color: #e1f7d2;
+	color: black;
+}

@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* 폰트 적용 */
+@font-face{
+	font-family: '나눔스퀘어 eb';
+	font-style: normal;
+	src:url(../font/NanumSquareEB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareEB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareEB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareEB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 b';
+	font-style: bold;
+	src:url(../font/NanumSquareRoundB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 r';
+	font-style: normal;
+	src:url(../font/NanumSquareRoundR.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundR.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundR.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundR.woff) format('woff');
+}
+li{
+	width: 210px;
+}
+body{
+	height: 1000px;
+	overflow: auto;
+	width: 1550px;
+	padding-left: 40px;
+}
+#main_logo{
+	position: absolute;
+	left: 450px;
+}
+/* login 버튼 */
+#login{
+	width: 80px; height: 35px;
+	background-color: black;
+	border: none; border-radius: 5px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	color: white;
+	position: absolute;
+	left: 1340px; top: 190px;
+}
+/* 회원가입 버튼 */
+#login_2{
+	width: 80px;
+	height: 35px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	position: absolute;
+	left: 1430px; top: 190px;
+}
+/* 말그대로 로그인 버튼 */
+#loginbutton{
+	width: 200px; height: 40px;
+	background-color: black;
+	color: pink;
+	border: none; border-radius: 5px;
+	margin-left: 40px;
+	font-weight: bold; font-family: "나눔스퀘어라운드 b"; font-size: 20px;
+}
+#login_input{
+	width: 150px;
+	height: 20px;
+}
+#map_seoul{
+	width: 635px; height: 640px;
+	position: absolute;
+	left: 70px; top: 315px;
+}
+/* 옆에 login 하는 공간*/
+#loginpage{
+	width: 280px; height: 150px;
+	position: absolute;
+	background-color: rgba(255,255,255,0.9);
+	border: 5px solild pink;
+	font: 15px "나눔스퀘어라운드 r";
+	position: absolute;
+	left: 1240px;
+	top: 315px;
+}
+#weather{
+	position: absolute;
+	left: 1240px; top: 480px;
+	width: 280px; height: 130px;
+}
+#notice{
+	position:absolute;
+	left: 740px; top:655px;
+	width: 780px; height:341px;
+	background-color: white;
+}
+h3{
+	position: absolute;
+	left: 740px; top: 606.5px;
+	font-family: "나눔스퀘어 eb"; font-size:20px;
+}
+#notice th{
+	font-family: "나눔스퀘어라운드 r"; 
+	background-color: #FCEAE2;
+	height: 45px;
+}
+#notice td{
+	font-family: "나눔스퀘어라운드 r";
+	height: 25px;
+}
+#tbl_th1{width: 97.5px; height: 50px;}
+#tbl_th2{width: 390px; height: 50px;}
+#tbl_th3{width: 195px; height: 50px;}
+#tbl_td1{
+	text-align:center;
+	background-color: #fff4cc;
+}
+#tbl_td2{
+	padding-left: 30px;
+	background-color: #f7f7f7;
+}
+/* 로그인 한 후의 상태 */
+#member_info{
+	position: absolute;
+	left: 10px; top: 15px;
+	width: 150px; height: 80px;
+	font-size: 18px; text-align: center;
+	border: none; border-radius: 3px;
+	background-color: #f7f7f7;
+}
+#member_wr{
+	position: absolute;
+	left: 170px; top: 15px;
+	width: 90px; height: 35px; line-height: 35px;
+	text-align: center;
+	border: none; border-radius: 3px;
+	background-color: #e0cdca;
+}
+#member_wr2{
+	position: absolute;
+	left: 170px; top: 60px;
+	width: 90px; height: 35px; line-height: 35px;
+	text-align: center; font-size: 15px;
+	border: none; border-radius: 3px;
+	background-color: #e0cdca;
+}
+#member_logout{
+	position:absolute;
+	left: 40px; top: 105px;
+	width: 190px; height: 35px; line-height:35px;
+	text-align: center;
+	background-color: black;
+	border: none; border-radius: 5px;
+}
+#info{
+	position: absolute; top: 15px; left: 25px;
+}
+#info2{
+	position: absolute; top: 45px; left: 35px;
+}
+/* 위아래 배경색깔 바꾸기*/
+#top{
+	width: 1470px;
+	height: 250px;
+}
+#bottom{
+	width: 1490px;
+	background-color: #f7f7f7;
+	height: 750px;
+}
+/* 탭바 시작 */
+#div_li{
+	margin-left: 35px;
+	width: 90px; height: 100%;
+}
+.tabbar{
+	border: none;
+	padding: 0px; margin-left: 10px; margin-right: 10px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	background-color: #e8e8ba;
+}
+.tabbar ul{
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.tabbar li{
+	float: left;
+	padding: 0px;
+}
+.tabbar li a{
+	color: black;
+	display: block;
+	line-height: 50px;
+	margin: 0px;
+	padding: 0px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.tabbar li a:hover, .tabbar ul li:hover a{
+	font-weight:bold;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.tabbar li ul{
+	background-color: aliceblue;
+	display: none;
+	height: auto;
+	padding: 0px; margin: 0px;
+	border: 0px;
+	position: absolute;
+	width: auto;
+	z-index: 200;
+}
+.tabbar li:hover ul{
+	display: block;
+}
+.tabbar li li{
+	float: none;
+	width: 210px;
+	margin: 0px; padding: 0px;
+	display: block;
+}
+.tabbar li:hover li a{
+	background-color: none;
+}
+.tabbar li ul a{
+	display: block;
+	height: 50px;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 10px 0px 15px;
+	text-align: left;
+}
+.tabbar li ul a:hover, .tabber li ul li:hover a{
+	background-color: #9e9b6d;
+	border: 0px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}

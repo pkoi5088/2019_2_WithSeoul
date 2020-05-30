@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* 폰트 적용 */
+@font-face{
+	font-family: '나눔스퀘어 eb';
+	font-style: normal;
+	src:url(../font/NanumSquareEB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareEB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareEB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareEB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 b';
+	font-style: bold;
+	src:url(../font/NanumSquareRoundB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 r';
+	font-style: normal;
+	src:url(../font/NanumSquareRoundR.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundR.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundR.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundR.woff) format('woff');
+}
+#main_logo{
+	position: absolute;
+	left: 450px;
+}
+body{
+	background-image: url('../Image/spring-view(3).jpg');
+	height: 850px; width: 1550px; padding-left: 40px;
+}
+h2{
+	font-size: 45px; font-family: "나눔스퀘어 eb";
+	position: absolute;
+	left: 290px; top: 25px;
+}
+li{
+	width: 210px;
+}
+div img{
+	position: absolute;
+	left: 30px; top: 10px;
+	width: 200px; height: 150px;
+	margin-left: 10px; margin-top: 25px;
+}
+#admitpage{
+	position: absolute;
+	left: 240px; top: 315px;
+	width: 1050px; height: 530px;
+	padding: 20px; padding-top: 5px;
+	border: none;
+	background-color: rgba(255,255,255,0.8);
+}
+#div_li{
+	margin-left: 35px;
+	width: 90px;
+	height: 100%;
+}
+#top{
+	width: 1470px;
+	height: 250px;
+}
+/* new*/
+#login_tbl{
+	position: absolute;
+	left: 320px; top: 140px;
+}
+#login_td{
+	width: 150px; height: 70px;
+	text-align: center;
+	font-family: "나눔스퀘어 eb"; font-size: 23px;
+}
+#login_td2{
+	width: 270px; height: 70px;
+	margin-left: 10px;
+}
+#login_input{
+	margin-left: 10px;
+	width: 230px; height: 30px;
+}
+#login_button{
+	width: 170px; height: 70px;
+	border: none; border-radius: 5px;
+	font-family: "나눔스퀘어 eb"; font-size: 20px;
+}
+#login_find{
+	position: absolute;
+	left: 750px; top: 275px;
+	width: 200px; height: 30px;
+	font-family: "나눔스퀘어라운드 r"; font-size: 15px;
+}
+#advertisement{
+	position: absolute;
+	left: 40px; top: 190px;
+	width: 200px; height: 330px;
+}
+#add_information{
+	position: absolute;
+	left: 380px; top: 330px;
+	width: 460px; height: 170px;
+	border: 3px solid gray;
+	background-color: #BED5E8;
+	font-family: "나눔스퀘어라운드 r";
+}
+#first{
+	position: absolute;
+	left: 13px; top: 12px;
+	font-size: 27px; font-family:"나눔스퀘어 eb";
+}
+#to_register{
+	position: absolute;
+	left: 50px; top: 55px;
+	font-size: 20px;
+	border: 2px solid #BED5E8;
+	padding: 10px;
+	background-color: gray;
+}
+#final{
+	position: absolute;
+	left: 25px; top: 115px;
+}
+/* 탭바 시작*/
+.tabbar{
+	position: absolute; top: 230px;
+	width: 1470px;
+	border: none;
+	padding: 0px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	background-color: #e8e8ba;
+}
+.tabbar ul{
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.tabbar li{
+	float: left;
+	padding: 0px;
+}
+.tabbar li a{
+	color: black;
+	display: block;
+	line-height: 50px;
+	margin: 0px; padding: 0px 25px;
+	text-align: center; text-decoration: none;
+}
+.tabbar li a:hover, .tabbar ul li:hover a{
+	font-weight:bold;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.tabbar li ul{
+	background-color: aliceblue;
+	display: none;
+	height: auto;
+	padding: 0px; margin: 0px;
+	border: 0px;
+	position: absolute;
+	width: auto;
+	z-index: 200;
+}
+.tabbar li:hover ul{
+	display: block;
+}
+.tabbar li li{
+	float: none;
+	width: 210px;
+	margin: 0px; padding: 0px;
+	display: block;
+}
+.tabbar li:hover li a{
+	background-color: none;
+}
+.tabbar li ul a{
+	display: block;
+	height: 50px;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 10px 0px 15px;
+	text-align: left;
+}
+.tabbar li ul a:hover, .tabber li ul li:hover a{
+	background-color: #9e9b6d;
+	border: 0px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}

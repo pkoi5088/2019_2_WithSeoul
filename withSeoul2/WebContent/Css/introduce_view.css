@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* 폰트 적용 */
+@font-face{
+	font-family: '나눔스퀘어 eb';
+	font-style: normal;
+	src:url(../font/NanumSquareEB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareEB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareEB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareEB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 b';
+	font-style: bold;
+	src:url(../font/NanumSquareRoundB.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundB.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundB.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundB.woff) format('woff');
+}
+@font-face{
+	font-family: '나눔스퀘어라운드 r';
+	font-style: normal;
+	src:url(../font/NanumSquareRoundR.eot); /* 익스플로러 */
+	src:url(../font/NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumSquareRoundR.woff) format('woff'), /* 크롬, 파이어폭스 */
+		url(../font/NanumSquareRoundR.ttf) format('truetype'); /* 사파리 */
+	src:local(※), url(../font/NanumSquareRoundR.woff) format('woff');
+}
+#main_logo{
+	position: absolute;
+	left: 450px;
+}
+.tabbar li{
+	width: 210px;
+}
+body{
+	height: 1000px; width:1550px;
+	overflow: auto;
+	padding-left: 40px;
+}
+/* login 버튼 */
+#login{
+	width: 80px; height: 35px;
+	background-color: black;
+	border: none; border-radius: 5px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	color: white;
+	position: absolute;
+	left: 1340px; top: 190px;
+}
+/* 회원가입 버튼 */
+#login_2{
+	width: 80px;
+	height: 35px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	position: absolute;
+	left: 1430px; top: 190px;
+}
+#top{
+	width: 1470px;
+	height: 250px;
+}
+/* new*/
+#title{
+	font-family: '나눔스퀘어 eb'; font-size: 25px;
+	height: 125px;
+}
+#introduce{
+	padding-left:25px;
+	position: absolute;
+	left: 330px; top: 315px;
+	font-family: '나눔스퀘어라운드 r'; font-size: 20px;
+	background-image: url("../Image/Discover_Seoul.jpg");
+	width: 800px; height: 650px;
+}
+#introduce_2{
+	position: absolute;
+	left: 330px; top: 315px;
+	font-family: '나눔스퀘어라운드 r'; font-size: 17px;
+	background-image: url("../Image/Discover_Seoul.jpg");
+	width: 800px; height: 650px;
+	padding-left:25px;
+}
+#intro{
+	position: absolute;
+	left: 40px; top: 110px;
+	width: 750px; height: 500px;
+}
+#intro div{
+	background-color: rgba(247,247,247,0.4);
+	height:230px;
+}
+#ph1{position:absolute; left:0px; top:0px; width:200px;}
+#ph2{position:absolute; left:0px; top:250px; width:200px;}
+#ph3{position:absolute; left:375px; top:0px; width:200px;}
+#ph4{position:absolute; left:375px; top:250px; width:200px;}
+#nt1{position:absolute; left:200px; top:0px; width:175px; padding:10px;}
+#nt2{position:absolute; left:200px; top:250px; width:175px; padding:10px;}
+#nt3{position:absolute; left:575px; top:0px; width:175px; padding:10px;}
+#nt4{position:absolute; left:575px; top:250px; width:175px; padding:10px;}
+#sidebar{
+	position: absolute;
+	left: 1180px; top: 315px;
+	width: 300px; height: 600px;
+}
+/* 탭바 시작*/
+#div_li{
+	margin-left: 35px;
+	width: 90px;
+	height: 100%;
+}
+.tabbar{
+	position: absolute; top: 230px;
+	width: 1470px;
+	border: none;
+	margin: 0px; padding: 0px;
+	font-family: "나눔스퀘어라운드 r";
+	font-size: 15px;
+	background-color: #e8e8ba;
+}
+.tabbar ul{
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.tabbar li{
+	float: left;
+	padding: 0px;
+}
+.tabbar li a{
+	color: black;
+	display: block;
+	line-height: 50px;
+	margin: 0px;
+	padding: 0px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.tabbar li a:hover, .tabbar ul li:hover a{
+	font-weight:bold;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.tabbar li ul{
+	background-color: aliceblue;
+	display: none;
+	height: auto;
+	padding: 0px; margin: 0px;
+	border: 0px;
+	position: absolute;
+	width: auto;
+	z-index: 200;
+}
+.tabbar li:hover ul{
+	display: block;
+}
+.tabbar li li{
+	float: none;
+	width: 210px;
+	margin: 0px; padding: 0px;
+	display: block;
+}
+.tabbar li:hover li a{
+	background-color: none;
+}
+.tabbar li ul a{
+	display: block;
+	height: 50px;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px 10px 0px 15px;
+	text-align: left;
+}
+.tabbar li ul a:hover, .tabber li ul li:hover a{
+	background-color: #9e9b6d;
+	border: 0px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+/* 왼쪽 네비게이션 바 */
+.leftbar{
+	width: 170px; height: 550px;
+	position: absolute;
+	left: 90px; top: 315px;
+	border: none;
+}
+.leftbar ul{
+	width: 200px; height: 70px;
+	list-style: none;
+	margin: 0px; padding: 0px;
+}
+.leftbar li{
+	float: top;
+	overflow: hidden;
+	display: block;
+	line-height: 70px;
+	text-align: center;
+	font-size: 20px; font-family: "나눔스퀘어라운드 r";
+	background-color: #e1f7d2;
+	color: black;
+}
+.leftbar li a{
+	display: block;
+	line-height: 70px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: "나눔스퀘어라운드 r";
+	background-color: #fda9af;
+	color: white;
+}
+.leftbar li a:hover, .leftbar ul li a:hover{
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
