@@ -32,8 +32,7 @@ Java의 일종의 Model을 담당하는 기술로 총 3개의 Model이 있다. �
 +  View/  
 해당 프로젝트는 MVC 모델1로 설계되었는데 JSP에서 View와 Controller를 담당한다. View/폴더는 View들을 모아놓은 플더로 각 화면에 대한 JSP들이 있다.  
 ### 3. MySQL & JDBC
-본 프로젝트에서 사용한 DBMS는 MySQL이다. JavaBeans에서 연동을 하였다면 기능 jsp에서 사용할 데이터 검색, 연산, 갱신, 삭제와 같은 실제 데이터베이스에 대한 처리를 한다.  
-생성한 Table은 총 3개이다. User의 목록을 나타낼 user_tbl, 게시글에 대한 내용, 위치정보를 나타낼 post_tbl, 신고글에 대한 정보를 나타낼 declare_tbl이다.
+본 프로젝트에서 사용한 DBMS는 MySQL이다. JavaBeans에서 연동을 하였다면 기능 jsp에서 사용할 데이터 검색, 연산, 갱신, 삭제와 같은 실제 데이터베이스에 대한 처리를 한다. 생성한 Table은 총 3개이다. User의 목록을 나타낼 user_tbl, 게시글에 대한 내용, 위치정보를 나타낼 post_tbl, 신고글에 대한 정보를 나타낼 declare_tbl이다.
 
 ### 4. Naver Map API
 장소들의 정확한 위치를 사용자들에게 제공하고자 프로젝트에 Naver에서 제공하는 Map API를 사용하였다.
