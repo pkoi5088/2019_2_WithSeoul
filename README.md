@@ -13,11 +13,24 @@
 전체 홈페이지 구조는 MVC모델을 바탕으로 설계하였고 모델1로 설계하였다.  
 
 ### 1. JavaBeans
-Java의 일종의 Model을 담당하는 기술로 총 3개의 Model이 있다. 실제 로그인을 한 사용자의 정보를 가지고 있는 User.java, 데이터베이스를 하나의 모델화 시킨 Javabeans.java, 실제 위치를 숫자화 시켜주는 Location.java이다. 실제 JSP내에서는 useBean을 User.java에만 사용하였는데 useBean을 데이터베이스에 사용하게 되면 여러 개의 연결이 발생해 비효율적이기 때문이다.  
+Java의 일종의 Model을 담당하는 기술로 총 3개의 Model이 있다. 실제 로그인을 한 사용자의 정보를 가지고 있는 User.java, 데이터베이스 접근 객체인 Javabeans.java, 실제 위치를 숫자화 시켜주는 Location.java이다. Location.java는 JSP내의 연산으로 해도 되지만 JSP 구현을 쉽게 하기 위해 추가하였다.  
+실제 데이터베이스 접근 객체는 Javabeans.java는 생성자에서 실제 서버와의 연동을 하고 쿼리연산, db 연결해제, user정보에 대한 check, 실제 로그인 및 회원가입 등 데이터베이스가 필요한 연산에 대해서 필요한 부분을 함수로 구현하였다.  
 
 ### 2. JSP
-기본적인 View와 로그인, 로그아웃 등 세션에서 처리해야 하는 기술적 페이지를 담당한다. Jsp의 개수는 총 18개 이며 그중 7개는 기능을, 10개는 화면을, 나머지 1개는 실행을 담당하는 jsp이다. 실제 연산은 javascript를 이용하여 프로그래밍하였지만 경고창과 같은 기능도 사용하기위해 html기능도 사용하였다.  
+기본적인 View와 로그인, 로그아웃 등 세션에서 처리해야 하는 기술적 JSP와 실제 사용자가 볼 화면을 담당한다. Jsp의 개수는 총 18개 이며 그중 7개는 기능을, 10개는 화면을, 나머지 1개는 실행을 담당하는 jsp이다.  
 
++ Declare/Delete, Insert.jsp  
+신고글을 담당하는 JSP 데이터베이스의 declare_tbl에 대한 삽입, 삭제 연산에 대한 기능을 가지고 있다.  
++ Login/Login.jsp  
+로그인을 담당하는 Login.jsp이다. 현재 로그인 정보는 Session에 id를 저장함으로 로그인 상태를 유지하도록 하였다.  
++ Post/Delete, Insert.jsp  
+게시글을 담당하는 JSP 데이터베이스의 post_tbl에 대한 삽입, 삭제 연산에 대한 기능을 가지고 있다. 게시글 하나가 가지고 있는 속성이 많기 때문에 입력되지 않은 정보에 대한 예외처리를 한번에 구현하였다.  
++ Register/Register.jsp  
+회원가입을위한 JSP로 user_tbl에 대한 삽입 연산이 이뤄진다. 입력하지 않은 회원정보나 이미 존재한 아이디 같은 경우를 예외처리 해주었으며 조건을 다 만족한다면 user_tbl에 삽입하도록 구현하였다.  
++ Withdraw/Withdraw.jsp  
+회원탈퇴에 대한 JSP로 Register.jsp는 user_tbl에 대한 삽입 연산이라면 Withdraw.jsp는 user_tbl에 대한 삭제 연산이다. 이미 id가 존재하기 때문에 바로 db모델만 있다면 삭제연산이 가능하다.  
++  View/  
+해당 프로젝트는 MVC 모델1로 설계되었는데 JSP에서 View와 Controller를 담당한다. View/폴더는 View들을 모아놓은 플더로 각 화면에 대한 JSP들이 있다.  
 ### 3. MySQL & JDBC
 본 프로젝트에서 사용한 DBMS는 MySQL이다. JavaBeans에서 연동을 하였다면 기능 jsp에서 사용할 데이터 검색, 연산, 갱신, 삭제와 같은 실제 데이터베이스에 대한 처리를 한다.  
 생성한 Table은 총 3개이다. User의 목록을 나타낼 user_tbl, 게시글에 대한 내용, 위치정보를 나타낼 post_tbl, 신고글에 대한 정보를 나타낼 declare_tbl이다.
